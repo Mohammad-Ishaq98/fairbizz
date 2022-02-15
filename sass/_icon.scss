@@ -1,0 +1,21 @@
+@use 'var' as v;
+.icon{
+  padding-bottom: 18px;
+  .single_icon_item{
+    img{
+      margin-bottom: 30px;
+    }
+    .icon_txt{
+      h3{
+        font-size: 24px;
+        color: #333333;
+        line-height: 1.1;
+      }
+      p{
+        margin-top: 17px;
+        font-size: 14px;
+        color: v.$texttwoColor;
+      }
+    }
+  }
+}

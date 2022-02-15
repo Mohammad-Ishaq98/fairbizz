@@ -1,0 +1,24 @@
+@use 'var' as v;
+.about{
+  padding: 120px 0 145px 0; 
+  .about_txt{
+    h2{
+      font-size: 48px;
+      color: #202020;
+      line-height: 1.2;
+      @include v.temHeadingLine;
+    }
+    p{
+      font-size: 30px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: v.$textMedium;
+    }
+  }
+  .about_right{
+    p{
+      color: v.$texttwoColor;
+      font-size: 14px;
+      line-height: 1.9;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@use 'var' as v;
+.blog{
+  padding: 120px;
+  background: #f7f7fd;
+  .blog_txt{
+    margin-bottom: 55px;
+    h2{
+      margin-bottom: 30px;
+      @include v.temHeadingLine();
+      &::before{
+        left: 13.5%;
+      }
+    }
+      p{
+        font-size: 18px;
+        color: v.$textOneColor;
+      }
+    }     
+  .blog_post{
+    img{
+
+    }
+    .blog_post_txt{
+      background: #fff;
+      padding: 38px 30px;
+      h5{
+        font-size: 16px;
+        color: #333333;
+        margin-bottom: 30px;
+      }
+      p{
+        font-size: 14px;
+        color: #777777;
+        margin-right: 20px;
+        display: inline-block;
+      }
+      span{
+        font-size: 14px;
+        color: #007bff;
+      }
+      a{
+        margin-top: 74px;
+        display: inline-block;
+      }
+    }
+  }
+}

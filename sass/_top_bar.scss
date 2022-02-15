@@ -1,0 +1,51 @@
+@use 'var' as v;
+.top_bar{
+  .top_bar_top{
+    background: #f7f7fd;
+    font-size: v.$textPrimarySize;
+    p{
+      color: v.$textOneColor;
+      padding: 10px 0;
+      line-height: 1.2;
+     }
+     span{
+       text-decoration: underline;
+       color: #08237e;
+     }
+    .social_box{
+
+      a{
+        i{
+          color: #959595;
+          font-size: 16px;
+          &:not(:nth-child(4)){
+            margin-right: 15px;
+          }
+          &:hover{
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+  .top_bar_bottom{
+    padding: 20px 0;
+    .contact_medium{
+      .single_contact_medium{
+        margin-right: 100px;
+        &:nth-child(3){
+          margin-right: 0;
+        }
+        i{
+          margin-right: 7px;
+        }
+        i,a{
+          color: v.$primaryColor;
+          font-size: v.$textSecondarySize;
+          font-weight: v.$textBold;
+        }
+        p{}
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+@use 'var' as v;
+.free_consultation{
+  padding: 190px 0;
+  background: #f7f7fd;
+  position: relative;
+  .consultation_left{
+    @include v.slickArrowCss(case_arrow_right,case_arrow_left,);
+      .case_arrow_left{
+        top: 209px;
+        position: relative;
+        left: 4px;
+      }
+      .case_arrow_right{
+        top: 20px;
+        position: relative;
+        left: 40px;
+      }
+      h4{
+
+      }
+
+    .person_info{
+      .person_txt{
+        margin-left: 15px;
+        h5{
+
+        }
+        p{
+
+        }
+      }
+    }
+  }
+  .consultation_right{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -130%;
+    padding: 47px 76px;
+    background: v.$primaryColor;
+    h2{
+      font-size: 30px;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+    .input-group{
+      margin-bottom: 30px;
+      background: #fff;
+      label{
+        color: v.$textOneColor;
+        font-size: 16px;
+        font-weight: 700;
+        &:last-child(){
+          padding: auto;
+        }
+      }
+      label{
+        padding: 30px 25px;
+      }
+      input{
+        padding: 30px 20px;
+      }
+      select {
+        option{
+          font-size: 16px;
+          font-weight: 700;
+          margin-bottom: 20px;
+        }
+      }
+      .form-control:focus {
+        box-shadow: none;
+      } 
+      .form-control {
+        background-color: transparent;
+        border: none;
+      }
+      textarea{
+        padding-top: 25px;
+        &::placeholder{
+          font-size: 16px;
+        font-weight: 700;
+        }
+      }
+    }
+  }
+  .consultation_btn{
+    padding: 24px 90px;
+    background: v.$secondColor;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+}

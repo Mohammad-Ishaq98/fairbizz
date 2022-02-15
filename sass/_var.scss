@@ -1,0 +1,53 @@
+$textOneColor:#777777;
+$texttwoColor:#828282;
+$textPrimarySize:14px;
+$textSecondarySize:16px;
+$primaryColor:#0668de;
+$secondColor:#19307d;
+$textRegular:400;
+$textMedium:500;
+$textExtraBold:800;
+$textBold:700;
+$primaryHeadingSize:48px;
+@mixin temHeadingLine (){
+	position: relative;
+	&::before{
+		position: absolute;
+		left: 52%;
+    top: 71%;
+		background: #007bff;
+		width: 100px;
+		height: 5px;
+		content: '';
+	}
+}
+@mixin slickArrowCss($case_arrow_right,$case_arrow_left) {
+	.case_arrow_right,.case_arrow_left{
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		border: 2px solid #777777;
+		border-radius: 50%;
+		line-height: 14px;
+		text-align: center;
+		color: #777777;  
+		&:active{
+			color: #0668de;
+			border:2px solid #0668de;
+		}  
+	}
+	.case_arrow_right{
+		right: 17px;
+		top: -80px;
+	}
+	.case_arrow_left{
+		right: 50px;
+		top: -80px;
+	}
+}
+.hidden{
+	display: none;
+}
+.red{
+	background-color: red;
+}

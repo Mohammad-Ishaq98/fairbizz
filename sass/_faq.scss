@@ -1,0 +1,43 @@
+@use 'var' as v;
+.faq{
+  //background-color: whitesmoke;
+  .faq_left{
+    img{
+
+    }
+  }
+  .faq_right{
+    .accordion{
+      .card{
+        border: 1px solid #e9e9e9;
+        margin-bottom: 20px;
+        .card-header{
+          background-color: transparent !important;
+          border: none;
+          padding: 0;
+          button{
+             padding: 20px 30px;
+             width: 100%;
+             text-align: left;
+             display: block;
+             text-decoration: none;
+          } 
+          i{
+            float: right;
+            margin-right: 30px;
+            color: #000;
+          }
+        }
+        // .card-body{
+        //   background: #f7f7fd;
+        // }
+      }
+        // .card-header button.collapsed {
+        //   background: transparent !important;
+        // }
+        // .card-header button:not(.collapsed) {
+        //   background: #f7f7fd;
+        // }
+    }
+  }
+}
