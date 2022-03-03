@@ -41,11 +41,8 @@ $('.collapse').on('shown.bs.collapse', function(){
   $(this).parent().find(".fa").removeClass("fa-minus").addClass("fa-plus");
 });  
 // accordiaons
-$('.btn-link').on('click', function(){
-  //$('.btn-link').parent().find('.card').css("background","red")
-      //if(e.currentTarget === this){
-        $('.card').css("background","red")
-         
+$('.card').on('click', function(){
+  $(this).addClass('bg-red').siblings().removeClass('bg-red');
 })
 //sticky menu
 $(window).on('scroll', function () {
