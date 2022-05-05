@@ -2,19 +2,24 @@ document.addEventListener(
   "DOMContentLoaded", () => {
       const menu = new MmenuLight(
           document.querySelector( "#menu" ),
-          "(max-width: 991px)"
+          "(max-width: 991px)",
       );
+      
+      const navigator = menu.navigation({
+        
+      });
 
-      const navigator = menu.navigation();
       const drawer = menu.offcanvas();
-
+      
       document.querySelector( "a[href='#menu']" )
           .addEventListener( "click", ( evnt ) => {
               evnt.preventDefault();
               drawer.open();
+              
           });
   }
 );
+
 //venobox
 new VenoBox({
 	selector: '.my-link',
@@ -124,17 +129,21 @@ $('.service_right').slick({
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 800,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 2,
+        infinite: true,
+        dots: true
       }
     },
     {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
       }
     }
     // You can unslick at a given breakpoint now by adding:

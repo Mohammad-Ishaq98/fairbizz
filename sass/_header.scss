@@ -57,4 +57,18 @@
     display: none;
   }
 }
+.mm-ocd-opened{
+  .close_icon{
+    display: block !important;
+    position: absolute;
+    z-index: 9999;
+    left: 92.5%;
+    font-size: 30px;
+    color: #fff;
+    top: 12%;
+  }
+  .bars{
+    display: none !important;
+  }
+}
 
