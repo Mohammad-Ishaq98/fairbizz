@@ -477,6 +477,10 @@
   .faq .faq_right .accordion .card .card-header i {
     font-size: 12px;
   }
+  .faq .faq_right .accordion .card .card-header i {
+    margin-right: -3px;
+    margin-top: 3px;
+}
   .blog .blog_txt h2 {
     margin-bottom: 20px;
     position: relative;
