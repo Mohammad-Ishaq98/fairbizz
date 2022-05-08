@@ -833,6 +833,12 @@
     left: 45.5%;
     height: 3px;
   }
+  .service .service_right .service_arrow_left {
+    left: 72%;
+  }
+  .service .service_right .service_arrow_right {
+    left: 106%;
+}
   .free_consultation .consultation_left .case_arrow_left {
     top: 88% !important;
   }
